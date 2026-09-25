@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONOUSCAR — Location de voitures à Marrakech</title>
+<meta name="description" content="MONOUSCAR, location de voitures à Marrakech. Peugeot 208, Renault Clio 5, Dacia Logan, Hyundai Accent, Golf 8. Boîte manuelle ou automatique, assurance tous risques incluse. Réservez via WhatsApp.">
+<meta name="theme-color" content="#15161a">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="MONOUSCAR — Location de voitures à Marrakech">
+<meta property="og:description" content="Location de voitures à Marrakech. Boîte manuelle 30€/jour, automatique 35€/jour. Assurance tous risques incluse. Réservation rapide via WhatsApp.">
+<meta property="og:image" content="assets/logo-gold.png">
+
+<!-- Favicons -->
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ SVG ICON SPRITE ============ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-gearbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="3"></circle>
+    <path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"></path>
+  </symbol>
+  <symbol id="icon-fuel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15"></path>
+    <path d="M4 21h10"></path>
+    <path d="M14 9h2.2l2.6 2.6V17a1.5 1.5 0 0 1-3 0"></path>
+    <path d="M7 6.5h5"></path>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+    <path d="M3 10h18M8 3v4M16 3v4"></path>
+  </symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"></path>
+    <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"></path>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"></path>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2l8 3.5v5.5c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5.5L12 2z"></path>
+    <path d="M9 12l2 2 4-4"></path>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"></path>
+    <circle cx="12" cy="9" r="2.5"></circle>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"></path>
+  </symbol>
+  <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.6 12.6L12.4 20.8a2 2 0 0 1-2.8 0l-7-7a2 2 0 0 1 0-2.8L10.8 2.8A2 2 0 0 1 12.2 2H19a2 2 0 0 1 2 2v6.8a2 2 0 0 1-.4 1.8z"></path>
+    <circle cx="15.5" cy="7.5" r="1.5"></circle>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M3 6h18M3 12h18M3 18h18"></path>
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M6 6l12 12M18 6L6 18"></path>
+  </symbol>
+  <symbol id="icon-car" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M4 22c0-1 .4-1.6 1.2-2.2L9 17c1-3.7 2.6-6.7 4.8-8.8C15.8 6.3 18.3 5.5 21 5.5h12c3.4 0 6.4 1.7 8.8 4.6l3.6 4.4 6 1.6c1.6.4 2.6 1.7 2.6 3.3v3.1c0 1-.8 1.9-1.9 1.9h-3.3"></path>
+    <path d="M14 24.5H45"></path>
+    <path d="M9 17h37.5"></path>
+    <path d="M22 10.5l-2.3 6.3M33 10.5l1.6 6.3"></path>
+    <circle cx="15.5" cy="24.5" r="3.6"></circle>
+    <circle cx="42" cy="24.5" r="3.6"></circle>
+  </symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="MONOUSCAR — Accueil">
+      <img src="assets/logo-dark.png" alt="MONOUSCAR Location de voiture" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="#flotte">Notre flotte</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#assurance">Assurance</a>
+      <a href="#comment">Comment ça marche</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn btn-whatsapp header-whatsapp js-whatsapp-link" target="_blank" rel="noopener">
+        <svg width="18" height="18"><use href="#icon-whatsapp"></use></svg>
+        <span>Réserver</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+        <svg width="24" height="24"><use href="#icon-menu"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow">Location de voitures · Marrakech</p>
+    <h1>Prenez la route à Marrakech<br><span class="text-gold">l'esprit tranquille.</span></h1>
+    <p class="hero-lead">Une flotte récente et bien entretenue, des tarifs clairs et une assurance tous risques incluse sur chaque location. Réservation simple, en quelques minutes, par WhatsApp.</p>
+
+    <div class="hero-actions">
+      <a href="#" class="btn btn-gold btn-lg js-whatsapp-link" target="_blank" rel="noopener">
+        <svg width="20" height="20"><use href="#icon-whatsapp"></use></svg>
+        Réserver sur WhatsApp
+      </a>
+      <a href="#flotte" class="btn btn-ghost btn-lg">Voir la flotte</a>
+    </div>
+
+    <ul class="hero-badges">
+      <li><svg width="18" height="18"><use href="#icon-shield"></use></svg> Assurance tous risques incluse</li>
+      <li><svg width="18" height="18"><use href="#icon-gearbox"></use></svg> Boîte manuelle ou automatique</li>
+      <li><svg width="18" height="18"><use href="#icon-tag"></use></svg> Prix clairs, sans surprise</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FLOTTE ============ -->
+<section class="section" id="flotte">
+  <div class="container">
+    <p class="section-eyebrow">Notre flotte</p>
+    <h2 class="section-title">Des véhicules récents pour chaque besoin</h2>
+    <p class="section-lead">Citadines économiques, berlines confortables ou modèle premium : chaque voiture est proposée en boîte manuelle ou automatique, essence ou diesel.</p>
+
+    <div class="fleet-grid" id="fleetGrid">
+      <!-- Cards injected by JS from data, see js/script.js -->
+    </div>
+    <p class="fleet-note">Photos non contractuelles, présentées à titre indicatif (modèle équivalent). Photos : Wikimedia Commons, sous licences libres — auteur et licence visibles en cliquant sur « Photo : Wikimedia Commons ».</p>
+  </div>
+</section>
+
+<!-- ============ TARIFS ============ -->
+<section class="section section-dark" id="tarifs">
+  <div class="container">
+    <p class="section-eyebrow section-eyebrow-light">Tarifs</p>
+    <h2 class="section-title section-title-light">Des prix simples, à la journée</h2>
+    <p class="section-lead section-lead-light">Le tarif dépend uniquement du type de boîte de vitesses — à l'exception de la Golf 8, proposée à un tarif premium dédié.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-card-head">
+          <svg width="28" height="28"><use href="#icon-gearbox"></use></svg>
+          <h3>Boîte manuelle</h3>
+        </div>
+        <p class="price-value">30<span>€ / jour</span></p>
+        <p class="price-desc">Peugeot 208, Dacia Logan, Renault Clio 5 — diesel, boîte manuelle.</p>
+      </div>
+
+      <div class="price-card price-card-featured">
+        <span class="price-badge">Le plus demandé</span>
+        <div class="price-card-head">
+          <svg width="28" height="28"><use href="#icon-gearbox"></use></svg>
+          <h3>Boîte automatique</h3>
+        </div>
+        <p class="price-value">35<span>€ / jour</span></p>
+        <p class="price-desc">Hyundai Accent, Renault Clio 5 — essence, boîte automatique.</p>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card-head">
+          <svg width="28" height="28"><use href="#icon-tag"></use></svg>
+          <h3>Golf 8 — Premium</h3>
+        </div>
+        <p class="price-value">80<span>€ / jour</span></p>
+        <p class="price-desc">Volkswagen Golf 8, diesel, boîte automatique.</p>
+      </div>
+    </div>
+
+    <p class="pricing-note">Tarifs en euros, par jour de location. Contactez-nous pour un devis sur mesure selon la durée de votre séjour.</p>
+  </div>
+</section>
+
+<!-- ============ ASSURANCE ============ -->
+<section class="section" id="assurance">
+  <div class="container insurance-wrap">
+    <div class="insurance-icon">
+      <svg width="48" height="48"><use href="#icon-shield"></use></svg>
+    </div>
+    <div class="insurance-text">
+      <p class="section-eyebrow">Assurance</p>
+      <h2 class="section-title">Assurance tous risques incluse</h2>
+      <p class="section-lead">Chaque location MONOUSCAR inclut une assurance <strong>tous risques</strong>, avec une franchise à partir de <strong>600&nbsp;€</strong> selon le véhicule choisi. Roulez à Marrakech en toute tranquillité.</p>
+      <ul class="insurance-list">
+        <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Couverture tous risques sur toute la durée de la location</li>
+        <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Franchise à partir de 600&nbsp;€ (variable selon le modèle)</li>
+        <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Assistance et conditions détaillées communiquées à la réservation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMENT CA MARCHE ============ -->
+<section class="section section-alt" id="comment">
+  <div class="container">
+    <p class="section-eyebrow">Comment ça marche</p>
+    <h2 class="section-title">Réservez en 3 étapes</h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-number">1</span>
+        <h3>Choisissez votre véhicule</h3>
+        <p>Parcourez la flotte et sélectionnez le modèle, la boîte et les dates qui vous conviennent.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">2</span>
+        <h3>Contactez-nous</h3>
+        <p>Écrivez-nous sur WhatsApp ou appelez-nous pour confirmer la disponibilité et le tarif.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">3</span>
+        <h3>Récupérez votre voiture</h3>
+        <p>Rendez-vous à Marrakech, signez le contrat et prenez la route l'esprit tranquille.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-dark" id="contact">
+  <div class="container contact-wrap">
+    <div class="contact-info">
+      <p class="section-eyebrow section-eyebrow-light">Contact</p>
+      <h2 class="section-title section-title-light">Parlons de votre location</h2>
+      <p class="section-lead section-lead-light">Notre équipe vous répond rapidement, en français, sur WhatsApp ou par téléphone.</p>
+
+      <ul class="contact-list">
+        <li>
+          <svg width="20" height="20"><use href="#icon-pin"></use></svg>
+          <div><strong>Marrakech, Maroc</strong><span>Remise et retour du véhicule à convenir</span></div>
+        </li>
+        <li>
+          <svg width="20" height="20"><use href="#icon-phone"></use></svg>
+          <div><strong class="js-phone-display">—</strong><span>Appel &amp; WhatsApp</span></div>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn-gold btn-lg js-whatsapp-link" target="_blank" rel="noopener">
+        <svg width="20" height="20"><use href="#icon-whatsapp"></use></svg>
+        Écrire sur WhatsApp
+      </a>
+    </div>
+
+    <form class="contact-form" id="bookingForm">
+      <h3>Demande de réservation</h3>
+
+      <label for="f-name">Nom complet</label>
+      <input type="text" id="f-name" name="name" required placeholder="Votre nom">
+
+      <label for="f-car">Véhicule souhaité</label>
+      <select id="f-car" name="car">
+        <option value="">Peu importe / à discuter</option>
+        <option>Hyundai Accent — Automatique, Essence, 2026</option>
+        <option>Peugeot 208 — Manuel, Diesel, 2023</option>
+        <option>Peugeot 208 — Manuel, Diesel, 2026</option>
+        <option>Dacia Logan — Manuel, Diesel, 2025</option>
+        <option>Renault Clio 5 — Automatique, Essence, 2025</option>
+        <option>Renault Clio 5 — Manuel, Diesel, 2022</option>
+        <option>Volkswagen Golf 8 — Automatique, Diesel, 2023</option>
+      </select>
+
+      <label for="f-dates">Dates souhaitées</label>
+      <input type="text" id="f-dates" name="dates" placeholder="Ex : du 2 au 9 octobre">
+
+      <label for="f-message">Message (optionnel)</label>
+      <textarea id="f-message" name="message" rows="3" placeholder="Précisions utiles pour votre réservation"></textarea>
+
+      <button type="submit" class="btn btn-gold btn-lg btn-block">
+        <svg width="18" height="18"><use href="#icon-whatsapp"></use></svg>
+        Envoyer via WhatsApp
+      </button>
+      <p class="form-note">En validant, WhatsApp s'ouvre avec votre demande déjà rédigée — il ne reste plus qu'à l'envoyer.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/logo-gold.png" alt="MONOUSCAR" class="footer-logo">
+    <nav class="footer-nav" aria-label="Navigation pied de page">
+      <a href="#flotte">Notre flotte</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#assurance">Assurance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">© <span id="year"></span> MONOUSCAR — Location de voiture à Marrakech. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="#" class="fab-whatsapp js-whatsapp-link" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <svg width="28" height="28"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
